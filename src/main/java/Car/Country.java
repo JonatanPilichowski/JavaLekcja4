@@ -9,7 +9,6 @@ public class Country {
         this.countrySign = countrySign;
     }
 
-
     public String getCountryName() {
         return countryName;
     }

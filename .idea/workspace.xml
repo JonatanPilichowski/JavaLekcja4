@@ -9,7 +9,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5410e29c-8ad8-4adc-ba55-424ae5b0ca8c" name="Changes" comment="Cars - Lesson 4">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Car/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Car/Car.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Car/Country.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Car/Country.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Car/DataFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Car/DataFactory.java" afterDir="false" />
@@ -47,15 +46,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Car.Main" />
@@ -85,6 +85,14 @@
       <option name="presentableId" value="Default" />
       <updated>1659879311317</updated>
     </task>
+    <task id="LOCAL-00001" summary="Cars - Lesson 4">
+      <created>1661119667840</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1661119667840</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

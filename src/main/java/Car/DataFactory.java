@@ -2,25 +2,22 @@ package Car;
 
 import java.util.List;
 
-public class  DataFactory {
+public class DataFactory {
     Country poland = new Country("Poland", 'P');
     Country ukraine = new Country("Ukraine", 'U');
     Country canada = new Country("Canada", 'C');
     Country mexico = new Country("Mexico", 'M');
     Country norway = new Country("Norway", 'N');
 
-   List<Country> europeCountries = List.of(poland,ukraine,norway);
-   List<Country> exclusiveCountries = List.of(canada,mexico,norway);
-   List<Country> cargoCountries = List.of(ukraine,mexico,norway, poland);
-   List<Country> businessCountries = List.of(canada,ukraine,norway);
-   List<Country> busCountries = List.of(ukraine,mexico,poland);
-
-
-
+    List<Country> europeCountries = List.of(poland, ukraine, norway);
     Market europeMarket = new Market("Europe", europeCountries);
+    List<Country> exclusiveCountries = List.of(canada, mexico, norway);
     Market exclusiveMarket = new Market("Exclusive", exclusiveCountries);
+    List<Country> cargoCountries = List.of(ukraine, mexico, norway, poland);
     Market cargoMarket = new Market("Cargo", cargoCountries);
+    List<Country> businessCountries = List.of(canada, ukraine, norway);
     Market businessMarket = new Market("Business", businessCountries);
+    List<Country> busCountries = List.of(ukraine, mexico, poland);
     Market busMarket = new Market("Bus", busCountries);
 
 
@@ -35,12 +32,11 @@ public class  DataFactory {
     Dimension dimension9 = new Dimension(180, 280, 330);
     Dimension dimension10 = new Dimension(190, 290, 340);
 
-    List<Dimension> smallCars = List.of(dimension1,dimension2,dimension3);
+    List<Dimension> smallCars = List.of(dimension1, dimension2, dimension3);
     List<Dimension> mediumCars = List.of(dimension4, dimension5);
-    List<Dimension> mediumExtraCars = List.of(dimension6,dimension7);
-    List<Dimension> mediumAndMediumExtraCars = List.of(dimension4, dimension5, dimension6,dimension7);
-    List<Dimension> largeCars = List.of(dimension8,dimension9,dimension10);
-
+    List<Dimension> mediumExtraCars = List.of(dimension6, dimension7);
+    List<Dimension> mediumAndMediumExtraCars = List.of(dimension4, dimension5, dimension6, dimension7);
+    List<Dimension> largeCars = List.of(dimension8, dimension9, dimension10);
     Producent astra = new Producent("Opel", "Astra");
     Producent vectra = new Producent("Opel", "Vectra");
     Producent insignia = new Producent("Opel", "Insignia");
@@ -51,27 +47,30 @@ public class  DataFactory {
     Producent qashqai = new Producent("Nissan", "Qashqai");
     Producent bmw = new Producent("BMW", "7");
     Producent juke = new Producent("Nissan", "Juke");
+    List<Car> testCars = List.of(
+            new Car(bmw, false, europeMarket, "standard", mediumCars),
+            new Car(bmw, false, cargoMarket, "standard", largeCars),
+            new Car(bmw, true, exclusiveMarket, "exclusive", largeCars),
+            new Car(bmw, true, businessMarket, "medium", mediumAndMediumExtraCars),
+            new Car(bmw, true, europeMarket, "standard", mediumAndMediumExtraCars),
+            new Car(bmw, true, europeMarket, "standard", mediumCars),
+            new Car(astra, true, cargoMarket, "medium", mediumAndMediumExtraCars),
+            new Car(vectra, true, businessMarket, "premium", mediumExtraCars),
+            new Car(insignia, false, europeMarket, "medium", mediumCars),
+            new Car(modus, true, europeMarket, "medium", smallCars),
+            new Car(laguna, true, exclusiveMarket, "premium", mediumAndMediumExtraCars),
+            new Car(clio, false, europeMarket, "standard", smallCars),
+            new Car(kangoo, true, busMarket, "standard", largeCars),
+            new Car(qashqai, true, businessMarket, "premium", largeCars),
+            new Car(juke, false, europeMarket, "medium", mediumAndMediumExtraCars)
+    );
 
- Car bmwSedan = new Car(bmw,true,europeMarket,"medium",mediumCars);
-    Car bmwEco = new Car(bmw,false,europeMarket,"standard",mediumCars);
-    Car bmwLarge = new Car(bmw,false,cargoMarket,"standard",largeCars);
-    Car bmwPremium = new Car(bmw,true,exclusiveMarket,"exclusive",mediumExtraCars);
-    Car bmwBusiness = new Car(bmw,true,europeMarket,"medium",mediumAndMediumExtraCars);
-    Car bmwPremiumSmall = new Car(bmw,true,europeMarket,"standard",smallCars);
-    Car bmwCargo = new Car(bmw,true,europeMarket,"standard",mediumCars);
-    Car opelAstraFamily = new Car(astra,true,cargoMarket,"medium",mediumAndMediumExtraCars);
-    Car vectraBusiness = new Car(vectra,true,businessMarket,"premium",mediumExtraCars);
-    Car insigniaEurope = new Car(insignia,false,europeMarket,"medium",mediumCars);
-    Car modusSenior = new Car(modus,true,europeMarket,"medium",smallCars);
-    Car lagunaPremium = new Car(laguna,true,exclusiveMarket,"premium",mediumAndMediumExtraCars);
-    Car clioEconomic = new Car(clio, false,europeMarket, "standard", smallCars);
-    Car kangooDelivery = new Car(kangoo, true, busMarket,"standard", largeCars);
-    Car qashqaiPremium = new Car(qashqai, true, businessMarket, "premium", largeCars);
-    Car jukeMedium = new Car(juke, false, europeMarket, "medium", mediumAndMediumExtraCars);
+    public DataFactory() {
+    }
 
-    List<Car> testCars = List.of(bmwSedan, bmwEco, bmwLarge, bmwPremium,bmwBusiness,bmwCargo,bmwPremiumSmall, kangooDelivery);
+    public List<Car> getTestCars() {
+        return testCars;
+    }
 
- public List<Car> getTestCars() {
-  return testCars;
- }
 }
+

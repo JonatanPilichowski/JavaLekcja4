@@ -5,10 +5,10 @@ public class Dimension {
     private int widthInCentimeters;
     private int trankCapacityInLiters;
 
-   public Dimension(int hightInCentimeters, int widthInCentimeters, int trankCapacityInLiters){
-        this.hightInCentimeters=hightInCentimeters;
-        this.widthInCentimeters=widthInCentimeters;
-        this.trankCapacityInLiters=trankCapacityInLiters;
+    public Dimension(int hightInCentimeters, int widthInCentimeters, int trankCapacityInLiters) {
+        this.hightInCentimeters = hightInCentimeters;
+        this.widthInCentimeters = widthInCentimeters;
+        this.trankCapacityInLiters = trankCapacityInLiters;
     }
 
     public int getHightInCentimeters() {
