@@ -7,7 +7,6 @@ public class Car {
     private Producent producent;
     private boolean isAutomaticGear;
     private Market market;
-    private String segment;
     private List<Dimension> dimension;
 
     public Car() {
@@ -17,7 +16,6 @@ public class Car {
         this.producent = producent;
         this.isAutomaticGear = isAutomaticGear;
         this.market = market;
-        this.segment = segment;
         this.dimension = dimension;
     }
 
@@ -38,6 +36,7 @@ public class Car {
         }
         printMessage(displayedResult);
     }
+
 
     private boolean isAutomaticGearAsExpected(boolean isAutomaticGear, Car car) {
         return car.isAutomaticGear == isAutomaticGear;
@@ -65,43 +64,4 @@ public class Car {
     }
 
 
-    public Producent getProducent() {
-        return producent;
-    }
-
-    public void setProducent(Producent producent) {
-        this.producent = producent;
-    }
-
-    public boolean isAutomaticGear() {
-        return isAutomaticGear;
-    }
-
-    public void setAutomaticGear(boolean automaticGear) {
-        isAutomaticGear = automaticGear;
-    }
-
-    public Market getMarket() {
-        return market;
-    }
-
-    public void setMarket(Market market) {
-        this.market = market;
-    }
-
-    public String getSegment() {
-        return segment;
-    }
-
-    public void setSegment(String segment) {
-        this.segment = segment;
-    }
-
-    public List<Dimension> getDimension() {
-        return dimension;
-    }
-
-    public void setDimension(List<Dimension> dimension) {
-        this.dimension = dimension;
-    }
 }
